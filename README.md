@@ -22,7 +22,7 @@ The Final Rose is an application that displays past Bachelorette's, their contes
 ---
 ### Not Required
 
-* No visual stylins is required or expected
+* No visual styling is required or expected
 ---
 ### Before Starting User Stories
 
