@@ -1,0 +1,9 @@
+<h1>Outing: <%= @outing.name %></h1>
+<p>Location: <%= @outing.location %></p>
+<p>Date: <%= @outing.date %></p>
+<p>Count of contestants - <%= @outing.participants %></p>
+<p>Contestants: <% @outing.contestants.each_with_index do |contestant, index| %>
+  <div id="contestant-<%= index %>">
+    <%= contestant.name %>
+  </div></p>
+<% end %>

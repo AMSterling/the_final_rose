@@ -5,4 +5,6 @@ Rails.application.routes.draw do
     resources :contestants, only: [:index, :show]
     resources :outings, only: [:show]
   end
+
+  get '/outings/:id', to: 'outings#show'
 end

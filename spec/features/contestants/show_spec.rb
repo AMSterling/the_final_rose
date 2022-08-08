@@ -185,6 +185,6 @@ RSpec.describe 'the bachelorette contestant show page' do
     end
 
     click_link('Dinner')
-    expect(current_path).to eq("/bachelorettes/#{lonely.id}/outings/#{outing5.id}")
+    expect(current_path).to eq("/outings/#{outing5.id}")
   end
 end

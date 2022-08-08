@@ -3,6 +3,6 @@
 <p>Hometown: <%= @contestant.hometown %></p>
 <p>Outings: <% @contestant.outings.each_with_index do |outing, index| %>
   <div id="outing-<%= index %>">
-    <%=link_to "#{outing.name}", bachelorette_outing_path(@bachelorette, outing) %>
+    <%=link_to "#{outing.name}", "/outings/#{outing.id}" %>
   </div></p>
   <% end %>
