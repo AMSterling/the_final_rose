@@ -6,3 +6,8 @@
     <p>Hometown: <%= contestant.hometown %></p>
   </div>
 <% end %>
+<p>These Contestants are from these hometowns: <% @bachelorette.unique_hometowns.each_with_index do |hometown, index| %>
+  <div id="hometown-<%= index %>">
+    <%= hometown %>
+  </div></p>
+<% end %>
