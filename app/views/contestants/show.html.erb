@@ -1,1 +1,8 @@
 <h1>Season <%= @bachelorette.season_number %> Contestant: <%= @contestant.name %></h1>
+<p>Age: <%= @contestant.age %></p>
+<p>Hometown: <%= @contestant.hometown %></p>
+<p>Outings: <% @contestant.outings.each_with_index do |outing, index| %>
+  <div id="outing-<%= index %>">
+    <%=link_to "#{outing.name}", bachelorette_outing_path(@bachelorette, outing) %>
+  </div></p>
+  <% end %>
